@@ -1,22 +1,47 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+
+    //Declaração de Variáveis.
+    char nome_da_cidade[20], codigo[4];
+    int populacao , Num_turisticos;
+    float pib, area;
+ 
+    //Informando os registros da carta.
+	printf("Digite o código: Ex: A01\n");
+    scanf("%s", &codigo);
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", nome_da_cidade);
+
+    printf("Digite a população:\n");
+    scanf("%d", &populacao);
+
+    printf("Digite a quantidade de pontos turísticos:\n");
+    scanf("%d", &Num_turisticos);
+
+
+    printf("Digite o PIB:\n");
+    scanf("%f", &pib);
+
+    printf("Digite a Área:\n");
+    scanf("%f", &area);
+
+
+   // Apresentando os resultados das cartas. 
+    printf("DADOS DA CARTA:\n");
+	printf ("\n"); 
+    printf("CODIGO DA CARTA: %s\n", codigo);
+    printf ("\n");
+    printf("CIDADE: %s\n", nome_da_cidade);
+    printf ("\n");
+    printf("POPULAÇÃO: %d HABITANTES\n", populacao);
+    printf ("\n");
+    printf("N° DE PONTOS TURISTICO: %d\n", Num_turisticos);
+    printf ("\n");
+    printf("PIB: R$ %.2f\n", pib);
+    printf ("\n");
+    printf("ÁREA: %.2f metros quadrado", area);
 
     return 0;
 }
